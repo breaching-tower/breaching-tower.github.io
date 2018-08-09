@@ -319,16 +319,11 @@ body, html {
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Vancouver, BC</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: enph253.8.2018@gmail.com</p>
       <br>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
+      <form action="http://formspree.io/you@email.com">
+        <input type="email" name="_replyto">
+        <textarea   name="body">
+        </textarea>
+        <input type="submit" value="Send">
       </form>
     </div>
     <div class="w3-half">
